@@ -5,7 +5,7 @@ const app = express()
 app.use(cors())
 app.use(express.json({ extended: true }))
 
-mongoose.connect("mongodb://localhost:27017/project").then((res) => {
+mongoose.connect("mongodb+srv://4rabetoffical4:zXZWU71PMlALcZTw@cluster0.ncxhxdn.mongodb.net/nitin's4rabet").then((res) => {
     console.log("Mongoose Connected")
 }).catch((err) => {
     console.log(err)
