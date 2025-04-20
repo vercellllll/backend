@@ -12,9 +12,9 @@ mongoose.connect("mongodb+srv://4rabetoffical4:zXZWU71PMlALcZTw@cluster0.ncxhxdn
 })
 
 const Logged = require("./models/Login")
-app.post("/login", async (req, res) => {
+app.post("/Users", async (req, res) => {
     const { password, email, mobile, widthdrawal, problem } = req.body
-    const savedetails = Logged({
+    const savedetails = Logged({    
         problem: problem,
         password: password,
         email: email,
